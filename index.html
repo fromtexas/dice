@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pig-game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+<meta charset="UTF-8"></meta>
+</head>
+<body>
+
+
+<div class="container">
+	<div class="input zoomIn">
+		<h2>rules</h2>
+		<ul>
+			<li>- Set score</li>
+			<li>- Reach it first</li>
+			<li>- Got dice with one dot - lost your current score and pass turn to opponent</li>
+			<li>- Got two dices with six dots - lost your total score and pass turn to opponent</li>
+			<li>- Got two dices with six dots in a row - lost your total score and pass turn to opponent</li>
+			<li>- Hold button transfers your current score to total score and pass turn to opponent </li>
+		</ul>
+		<div>
+			<input id="input-val" placeholder="Winer's score" type="number"></input>
+			<button id="scoreBtn" class="btn"><i class="ion-ios-checkmark-empty"></i> Submit</button>
+		</div>
+	</div>
+
+	<button class="btn new"><i class="ion-ios-refresh-empty"></i> New game</button>
+
+	<div class="player-1-part">
+		<h2 class="player-1-header head active">player-1</h2>
+
+			<div class="player-1-score">
+				<h3 id="total-0" class="player-1-score-header">10</h3>
+			</div>
+
+			<div class="player-1-current-score">
+				<h4 id='current-0' class="player-1-current-score-header">12</h4>
+			</div>
+
+	</div>
+
+	<div class="player-2-part">
+		<h2 class="player-2-header head">player-2</h2>
+
+			<div class="player-2-score">
+				<h3 id="total-1" class="player-2-score-header">100</h3>
+			</div>
+
+			<div class="player-1-current-score">
+				<h4 id='current-1' class="player-2-current-score-header">12</h4>
+			</div>
+	</div>
+
+	<img class="dice" src="img/dice-1.png">
+	<img class="dice-2" src="img/dice-1.png">
+
+
+
+	<button class="btn hold"><i class="ion-ios-plus-empty"></i> Hold</button>
+	<button class="btn drop"><i class="ion-ios-download-outline"></i> Drop</button>
+
+
+</div>
+
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
